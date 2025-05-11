@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+.app-bg {
+  background-color: #87ceeb; /* Sky blue */
+  min-height: 100vh;
+  padding-bottom: 60px; /* Space for bottom nav */
+}
+
+form {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  flex: 1;
+}
+
+button[type="submit"] {
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+}
+
+ul {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 60px;
+  z-index: 1000;
+}
