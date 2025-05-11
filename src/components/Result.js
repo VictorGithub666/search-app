@@ -49,7 +49,7 @@ function Result({ results }) {
                   <img
                     src={item.snippet.thumbnails.medium.url}
                     alt={item.snippet.title}
-                    className="img-fluid rounded-start"
+                    className="img-fluid rounded-start h-100"
                   />
                 </div>
                 <div className="col-8">
@@ -68,9 +68,7 @@ function Result({ results }) {
                       <small className="text-muted">
                         Channel: {item.snippet.channelTitle}
                       </small>
-                    </p>
-                    <p className="card-text mb-1">
-                      <small className="text-muted">
+                      <small className="text-muted ms-3">
                         Views: {formatViewCount(item.statistics.viewCount)}
                       </small>
                     </p>
@@ -78,9 +76,7 @@ function Result({ results }) {
                       <small className="text-muted">
                         Duration: {formatDuration(item.contentDetails.duration)}
                       </small>
-                    </p>
-                    <p className="card-text">
-                      <small className="text-muted">
+                      <small className="text-muted ms-3">
                         Uploaded: {timeSinceUpload(item.snippet.publishedAt)}
                       </small>
                     </p>
